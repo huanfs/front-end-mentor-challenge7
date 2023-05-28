@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;700&display=swap');
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    display:flex;
+    justify-content:center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+header, main{
+    background-color:#fff;
+}
+header{
+    width:90%;
+    display:flex;
+    justify-content:space-between;
+}
+header button{
+    background-color:#fff;
+    border:none;
+    outline:0;
+    color:#565454;
+}
+header button:hover{
+    color:#0008ff;
+    cursor:pointer;
+}
+#title{
+    display:flex;
+    align-items:center;
+    gap:1em;
+}
+#title span{
+    padding:5px 10px;
+    background-color:#0008ff;
+    color:#fff;
+    border-radius:5px;
+}
+main{
+    width:600px;
+    min-width:400px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:0.7em;
+    margin:2em 0;
+    padding:2em 0;
+    border-radius:10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.279);
+}
+.notification{
+    width:90%;
+    display:flex;
+    align-items:center;
+    flex-direction:row;
+}
+.notification:nth-child(6){
+    width:80%;
+    border:1px solid #0000009f;
+    text-align:justify;
+    padding:5px;
+    border-radius:10px;
+    color:#565454;
+    background-color:#fff;
+    margin-left:auto;
+    margin-right:2em;
+}
+.notification:hover:nth-child(6){
+    background-color:rgba(3, 81, 58, 0.161);
+    cursor:pointer;
+}
+.notification img{
+    transform:scale(0.6, 0.6);
+}
+.notification-descrip{
+    display:flex;
+    flex-direction:column;
+}
+.notification-descrip a{
+    text-decoration-line:none;
+    font-weight:700;
+}
+.descrip{
+    display:inline-block;
+}
+.descrip svg{
+    color:#ee050598;
+}
+.descrip p{
+    color:#565454;
+    display:inline-block;
+}
+.descrip a:hover{
+    cursor:pointer;
+    color:#0008ff;
+}
+.descrip a:first-child{
+    text-decoration-line:none;
+    color:#000;
+    font-weight:700;
+}
+.descrip a:last-child{
+    text-decoration-line:none;
+    font-weight:700;
+}
+.hour p{
+    margin-top:0.3em;
+    color:#565454;
+}
+
+
+/* nao lidas */
+.notification:nth-child(-n+4){
+    border-radius:10px;
+    background-color:rgba(191, 253, 212, 0.485);
+}
