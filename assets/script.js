@@ -2,7 +2,7 @@ let notification = document.querySelectorAll(".notification");
 let checkAll = document.querySelector("button");
 let bolinha = document.getElementsByTagName("svg");
 checkAll.addEventListener("click", CheckAll)
-for(let i = 0; i<3; i++){//pra cada área de noptificação, adicone o evento click
+for(let i = 0; i<3; i++){//pra cada área de notificação, adicone o evento click
     notification[i].addEventListener("click", Check);
 }
 function CheckAll(){//marca todas como visualizadas aplicando a remoção de uma por uma através do laço de repetição
